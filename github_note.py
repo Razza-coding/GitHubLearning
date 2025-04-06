@@ -1,5 +1,5 @@
 def lesson_1():
-    '''
+    lesson_msg = '''
     [ Difference between git add, git commit, git push ]
 
     git add:
@@ -18,3 +18,5 @@ def lesson_1():
     git push:
         update your code to remote side (GitHub)
     '''
+    print(lesson_msg)
+    pass
