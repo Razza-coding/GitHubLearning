@@ -4,14 +4,14 @@ from feature_1 import feature_1
 
 # main functions here
 def main_init():
-    print("【Hello World】")
+    print("1. this is a project about how to use github")
     pass
 
 def main_process_1():
-    print("1. this is a project about how to use github")
+    print("2. calling feature-1")
 
 def main_process_2():
-    print("2. we just called feature-1, which is branched and developed and will merge back later")
+    print("3. we just called feature-1, which is branched and developed and will merge back later")
 
 # main program
 if __name__ == "__main__":
