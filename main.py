@@ -2,6 +2,7 @@ import os
 import github_note as note
 from feature_1 import feature_1
 from feature_2 import feature_2
+from feature_3 import feature_3
 
 # main functions here
 def main_init():
@@ -20,6 +21,15 @@ def main_process_3():
 def main_process_4():
     print("5. we just called feature-2")
 
+def main_process_5():
+    print("6. calling feature-3")
+
+def main_process_6():
+    print("7. we just called feature-3, UI is updated")
+
+def main_process_7():
+    print("8. feature-2 and feature-3 ended")
+
 # main program
 if __name__ == "__main__":
     main_init()
@@ -30,7 +40,12 @@ if __name__ == "__main__":
     # feature-2
     main_process_3()
     feature_2()
-    # feature-3
-    # end of feature-2 and feature-3
     main_process_4()
+    # feature-3
+    main_process_5()
+    feature_3()
+    main_process_6()
+    # end of feature-2 and feature-3
+    main_process_7()
+    
     pass
