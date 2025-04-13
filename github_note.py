@@ -150,3 +150,84 @@ def lesson_5():
     '''
     print(lesson_msg)
     pass
+
+
+def lesson_6():
+    lesson_msg = '''
+    [ How to ignore trash/cache/personal files ] 
+
+    create a ".gitignore" file to list all the unwanted files/folders
+    for example:
+        __pycache__/
+        *.pyc
+        .env
+        logs/
+        outputs/
+        keys/
+
+    ".gitignore" only effect the files that is not track
+    if we accidently add unwanted files in git history, remove it
+
+    How to remove file/folder tracking:
+        use "git rm --cached <file or folder>" to remove traching, and then commit the remove action
+        after removing it, ".gitignore" will effect the files
+    '''
+    print(lesson_msg)
+    pass
+
+def lesson_7():
+    lesson_msg = '''
+    [ How to merge multiple features ] 
+
+    Lets say we have "feature-2" and "feature-3" need to be add in project
+    And main branch will be developing during the feature development process, we'll call it "main-org" and "main-updated" as different commits of main branch
+    
+    1. Branch out from main-org
+        We do not want to update main branch, it should be a stable version of our project
+        We'll start with creating 2 branches, that is feature-2 and feature-3
+        Different features will be develop in seprate branches, merge comflict will be handled later
+
+    2. Develop feature-2 and feature-3
+        Add whatever we feature want
+        Main.py, feature_2.py,  feature_3.py is expected to be modified/created
+        Merge conflict might occur in main.py, but we'll try to complete new feature 1st
+    
+    3. Merge main-updated to feature-2 and feature-3 branches seperately
+        Some bus fix is commited while we develop features
+        We should try to merge main-updated into feature-2 and feature-3 first, handle the conflict from main 1st
+
+        DO NOT merge feature-2 and feature-3 before merging main-updated, this will create more conflict
+
+    4. Create a branch for merging feature-2 and feature-3
+        We assume feature-2 and feature-3 have merged main-updated and completed their developments
+        Create a new branch to merge feature-2 and feature-3 now, we'll use feature-2 to create a new branch
+
+        This is where we handle most conflict between feature-2 and feature-3
+        Conflict example:
+            Different Main process
+            Same function name with different usage
+            Same or similar variable names
+            Comments
+        
+        We can try to run the code during merging, and then complete the merge
+        Make sure feature will work after merging, and then we optimize the code in this branch
+            
+    5. Merge feature-2-3 into main branch
+        After merging feature-2 and feature-3, it's time to merge into main
+        Switch to main branch and merge feature-2-3, we should have no problem merging since we already update changes from "main-updated"
+    '''
+    print(lesson_msg)
+    pass
+
+def lesson_8():
+    lesson_msg = '''
+    [ How to restore changes ] 
+
+    Use "git restore" to restore file changes
+    "git restore"          : restore your files/code to last commit, but staged files will not change
+    "git restore --staged" : restore your staged files, but files/code will not change
+
+    If we want restore both "staged files" and current files, we should run both commands
+    '''
+    print(lesson_msg)
+    pass
