@@ -52,6 +52,9 @@ def lesson_3():
         After this command, our branch will become feature-1
 
         Anything deveiop inside feature-1 branch is separate to the main branch, so you can try any wild idea here.
+
+    git switch:
+        Simple version of git checkout, only do branch switching, very safe to use.
     
     develop feature-1:
         Now we start changing code inside feature-1
@@ -119,6 +122,31 @@ def lesson_4():
         1. you can use git reflog to reset a reset operation
         2. you can see your log noted that HEAD@{A} moved to HEAD{B}
         3. just select the HEAD before you do the reset command, then you'll be fine
+    '''
+    print(lesson_msg)
+    pass
+
+def lesson_5():
+    lesson_msg = '''
+    [ How to check old commits and run old code ] 
+
+    Entering detached HEAD:
+        In this state, we are not in any branch
+        Only checking previous commits
+    
+    How to enter old commits in detached mode:
+        use "git checkout <commit-hash>" or "git switch --detach <commit-hash>" to select specfic commit
+            
+        How to find commit hash:
+            use "git log --oneline"
+
+    How to check if we are in detached HEAD:
+        use "git status", it'll say "HEAD is detached at <commit-head>"
+        using "git branch" will not display any branch
+
+    Can we commit a detached HEAD:
+        No, detached HEAD have no relationship with orignal project any more
+        If you do a commit and create a branch, it is same as creating a new main branch for new project
     '''
     print(lesson_msg)
     pass
