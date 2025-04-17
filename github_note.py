@@ -231,3 +231,36 @@ def lesson_8():
     '''
     print(lesson_msg)
     pass
+
+def lesson_9():
+    lesson_msg = '''
+    [ How to Read Commit Messages ]
+
+    Use `git show <hash>` to display commit details.
+
+    (Basic Information):
+        Unique ID   : Commit SHA string
+        Merge       : Shows which two commits were merged
+        Author      : Person who made the commit
+        Date        : Timestamp of the commit
+        Commit Msg  : Message below the Date line
+
+    (Merge Diff Header):
+        a/main.py   : File before the merge (base/original)
+        b/main.py   : File after the merge (result)
+
+    (Merge Details - Diff Section):
+        Example     : @@@ -1,7 -1,7 +1,8 @@@
+        @@@         : Indicates a diff block (merge conflict hunk)
+        -1,7 (left) : Left-side parent range (start line and line count)
+        -1,7 (right): Right-side parent range
+        +1,8        : Resulting merged block (start line and line count)
+
+    (Merge Symbols):
+        +           : Line added in the result
+        -           : Line removed from the original
+        ++          : Line added from one of the branches during merge
+        --          : Line removed from one of the branches during merge
+        +++         : Multiple lines added (visual emphasis)
+        ---         : Multiple lines deleted (visual emphasis)
+    '''

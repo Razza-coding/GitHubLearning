@@ -16,7 +16,7 @@ examine the history and state (see also: git help revisions)
 [LEARNED]   diff              Show changes between commits, commit and working tree, etc
 [       ]   grep              Print lines matching a pattern
 [LEARNED]   log               Show commit logs
-[       ]   show              Show various types of objects
+[LEARNED]   show              Show various types of objects
 [LEARNED]   status            Show the working tree status
 
 grow, mark and tweak your common history
