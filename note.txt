@@ -6,13 +6,13 @@ start a working area (see also: git help tutorial)
 
 work on the current change (see also: git help everyday)
 [LEARNED]   add               Add file contents to the index
-[       ]   mv                Move or rename a file, a directory, or a symlink
+[LEARNED]   mv                Move or rename a file, a directory, or a symlink
 [LEARNED]   restore           Restore working tree files
 [LEARNED]   rm                Remove files from the working tree and from the index
-[       ]   sparse-checkout   Initialize and modify the sparse-checkout
+[LEARNED]   sparse-checkout   Initialize and modify the sparse-checkout
 
 examine the history and state (see also: git help revisions)
-[       ]   bisect            Use binary search to find the commit that introduced a bug
+[LEARNED]   bisect            Use binary search to find the commit that introduced a bug
 [LEARNED]   diff              Show changes between commits, commit and working tree, etc
 [LEARNED]   grep              Print lines matching a pattern
 [LEARNED]   log               Show commit logs

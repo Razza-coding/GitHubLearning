@@ -300,3 +300,64 @@ def lesson_11():
     '''
     print(lesson_msg)
     pass
+
+def lesson_12():
+    lesson_msg = '''
+    [ Binary Search For Bug Searching ]
+
+    "git bisect" is a test tool that searches the first broken commits within multiple commits
+
+    Core usage:
+    1. Enter bisect mode
+        - "git bisect start"
+    2. Set a commit search range, noted good and bad commit
+        - "git bisect bad <hash>"
+        - "git bisect good <hash>"
+        - note that bad hash must be "newer" and "smae branch" version of good hash
+    3. Make a test script
+        - sh py exe ps1 cmd, anything that can send return code
+    4. Run bisect testing
+        - "git bisect run <script>"
+        - Start from good commit to bad commit in order
+        - It'll return the 1st result that failed the test, which means the commit that breaks the code
+    5. Display result
+        - "git bisect log"
+        - "git bisect visualize"
+    '''
+    print(lesson_msg)
+    pass
+
+def lesson_13():
+    lesson_msg = '''
+    [ Moving Or Rename Files ]
+
+    Use "git mv <orignal file> <new path or name>" to change file location or name
+
+    Why not just move the file?
+        - git will track as adding a file and deleting a file
+        - git mv can label file as "renamed:"
+        - but mv from system will not be consider moved by git
+    
+    What if I combine with git add?
+        - using "git add ." will not overwrite record from "git mv"
+        - save to use together
+    '''
+    print(lesson_msg)
+    pass
+
+def lesson_14():
+    lesson_msg = '''
+    [ Checkout Part of the Project Files ]
+
+    Sparse Checkout is similar to Clone, but ont copy and track part of the project
+
+    Use "git sparse-checkout set <part of project folder>" to clone one part of project
+    Development is the same as using git clone, add, commit, push
+
+    If we need FULL project files when we are in sparse checkout, we can still get full project
+    Using "git sparse-checkout disable"
+
+    A switch tool between Full mode and Sparse mode
+    '''
+    print(lesson_msg)
+    pass

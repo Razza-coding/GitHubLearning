@@ -1,8 +1,8 @@
 import os
 import github_note as note
-from feature_1 import feature_1
-from feature_2 import feature_2
-from feature_3 import feature_3
+from feature.feature_1 import feature_1
+from feature.feature_2 import feature_2
+from feature.feature_3 import feature_3
 
 # main functions here
 def main_init():
