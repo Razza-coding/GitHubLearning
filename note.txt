@@ -14,7 +14,7 @@ work on the current change (see also: git help everyday)
 examine the history and state (see also: git help revisions)
 [       ]   bisect            Use binary search to find the commit that introduced a bug
 [LEARNED]   diff              Show changes between commits, commit and working tree, etc
-[       ]   grep              Print lines matching a pattern
+[LEARNED]   grep              Print lines matching a pattern
 [LEARNED]   log               Show commit logs
 [LEARNED]   show              Show various types of objects
 [LEARNED]   status            Show the working tree status
@@ -26,9 +26,9 @@ grow, mark and tweak your common history
 [       ]   rebase            Reapply commits on top of another base tip
 [       ]   reset             Reset current HEAD to the specified state
 [LEARNED]   switch            Switch branches
-[       ]   tag               Create, list, delete or verify a tag object signed with GPG
+[LEARNED]   tag               Create, list, delete or verify a tag object signed with GPG
 
 collaborate (see also: git help workflows)
-[       ]   fetch             Download objects and refs from another repository
+[LEARNED]   fetch             Download objects and refs from another repository
 [LEARNED]   pull              Fetch from and integrate with another repository or a local branch
 [LEARNED]   push              Update remote refs along with associated objects

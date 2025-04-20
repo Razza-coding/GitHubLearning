@@ -264,3 +264,39 @@ def lesson_9():
         +++         : Multiple lines added (visual emphasis)
         ---         : Multiple lines deleted (visual emphasis)
     '''
+    print(lesson_msg)
+    pass
+
+def lesson_10():
+    lesson_msg = '''
+    [ How Add Version Tags ]
+
+    Use `git tag <tag> <hash>` to add version tags.
+    git tag v1.0 abc1234 means commit abc1234 has been tag as v1.0
+
+    View all tags in commits:
+        git tag
+    
+    Show commit message bt tag:
+        git show <tag>
+
+    Remove a tag from commit
+        git tag -d <tag>
+
+    Note that we can not delete commit by using tags
+    '''
+    print(lesson_msg)
+    pass
+
+def lesson_11():
+    lesson_msg = '''
+    [ How Search Keyword In any Commit ]
+
+    Use `git grep <keyword> <tag/hash/HEAD@>` to serach for key word in specfic commit
+    When using `git grep` without targeting commit, git use current commit
+
+    git grep supports regular expression, for example:
+        git grep "How to.*merge.*"
+    '''
+    print(lesson_msg)
+    pass
