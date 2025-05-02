@@ -24,7 +24,7 @@ grow, mark and tweak your common history
 [LEARNED]   commit            Record changes to the repository
 [LEARNED]   merge             Join two or more development histories together
 [       ]   rebase            Reapply commits on top of another base tip
-[       ]   cherry-pick       Apply the changes introduced by existing commit(s) onto the current branch
+[LEARNED]   cherry-pick       Apply the changes introduced by existing commit(s) onto the current branch
 [LEARNED]   reset             Reset current HEAD to the specified state
 [LEARNED]   switch            Switch branches
 [LEARNED]   tag               Create, list, delete or verify a tag object signed with GPG

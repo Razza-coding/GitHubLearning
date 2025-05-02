@@ -411,3 +411,21 @@ Development is the same as using git clone, add, commit, push
 ```text
 If we need FULL project files when we are in sparse checkout, we can still get full project   
 ```
+
+---
+
+# Commit Part of Develop Branch to Main Branch
+```text
+Assuming We have 2 branch, Main and Dev
+While Dev feature is still under development, Main needs one part of the feature to update as soon as possible
+In this case, we need to select 1 commit from Dev branch, and merge it into Main
+Rest of the feature will be added later
+```
+## git cherry-pick \<hash>
+```text
+Merge a selected commit into current commit
+1. Switch to Dev branch, copy the commit hash code with feature /file you need
+2. Switch back to Main branch
+3. Execute git cherry-pick with the hash from 1.
+4. Resolve conflict
+```
