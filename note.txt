@@ -23,7 +23,7 @@ grow, mark and tweak your common history
 [LEARNED]   branch            List, create, or delete branches
 [LEARNED]   commit            Record changes to the repository
 [LEARNED]   merge             Join two or more development histories together
-[       ]   rebase            Reapply commits on top of another base tip
+[LEARNED]   rebase            Reapply commits on top of another base tip
 [LEARNED]   cherry-pick       Apply the changes introduced by existing commit(s) onto the current branch
 [LEARNED]   reset             Reset current HEAD to the specified state
 [LEARNED]   switch            Switch branches

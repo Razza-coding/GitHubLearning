@@ -429,3 +429,32 @@ Merge a selected commit into current commit
 3. Execute git cherry-pick with the hash from 1.
 4. Resolve conflict
 ```
+
+---
+
+# Updating Main Code While Developing a Feature Branch
+## git rebase \<branch name>
+**Only use this command for YOU OWN branch**
+**Rebase Command can modify commit history and commit IDs**
+```
+In a case where we have Main-old and Main-new commit in Main branch
+Our feature branch is coming from Main-old commit
+After a while, other developers commit to main branch and create Main-new commit
+```
+```
+Main idea is change the starting commit of feature branch
+From Main-old, to Main-new, makes the commit graph clean
+
+While we are still working on our feature branch
+We can merge the update before continue
+```
+```
+1. Switch to the branch we are developing
+2. Execute git rebase Main-new
+3. Resolve conflict
+4. Git will change current branch's history, instead of Main-old commit, feature branch now comes from Main-new commit
+```
+
+---
+
+# End of All Target Lesson
