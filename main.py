@@ -55,5 +55,9 @@ if __name__ == "__main__":
     main_process_7()
     # feature 1~3 message is updated
     # now feature 4 execute rebase
+    # feature-4
+    main_process_8()
+    feature_4()
+    main_process_9()
     
     pass
