@@ -2,6 +2,7 @@ import os
 from feature.feature_1 import feature_1
 from feature.feature_2 import feature_2
 from feature.feature_3 import feature_3
+from feature.feature_4 import feature_4
 
 # main functions here
 def main_init():
@@ -28,6 +29,12 @@ def main_process_6():
 
 def main_process_7():
     print("8. feature-2 and feature-3 finished")
+
+def main_process_8():
+    print("9. calling feature-4")
+
+def main_process_9():
+    print("10. we just called feature-4")
 
 # main program
 if __name__ == "__main__":
