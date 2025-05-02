@@ -9,25 +9,25 @@ def main_init():
     pass
 
 def main_process_1():
-    print("2. calling feature-1")
+    print("2. calling feature-1 (branch out and merge back example)")
 
 def main_process_2():
-    print("3. we just called feature-1, which is branched and developed and will merge back later")
+    print("3. feature-1 finished")
 
 def main_process_3():
-    print("4. calling feature-2")
+    print("4. calling feature-2 (multiple branch developing example)")
 
 def main_process_4():
-    print("5. we just called feature-2")
+    print("5. feature-2 finished")
 
 def main_process_5():
-    print("6. calling feature-3")
+    print("6. calling feature-3 (multiple branch developing example)")
 
 def main_process_6():
-    print("7. we just called feature-3, UI is updated")
+    print("7. feature-3 finished")
 
 def main_process_7():
-    print("8. feature-2 and feature-3 ended")
+    print("8. feature-2 and feature-3 finished")
 
 # main program
 if __name__ == "__main__":
@@ -46,5 +46,7 @@ if __name__ == "__main__":
     main_process_6()
     # end of feature-2 and feature-3
     main_process_7()
+    # feature 1~3 message is updated
+    # now feature 4 execute rebase
     
     pass
